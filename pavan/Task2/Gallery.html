@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligthbox-Enabled Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+body{
+    background: #917d7d;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.gallery a{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery a img:hover{
+    transform: scale(1.4);
+}
+h1{
+    font-size: 50px;
+    margin-top: 10;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1>Space Gallery</h1>
+    <div class="gallery">
+        <a href="pics\3d-view-sun-space.jpg"><img src="pics\3d-view-sun-space.jpg" alt=""></a>
+
+        <a href="pics\galaxy-night-landscape.jpg"><img src="pics\galaxy-night-landscape.jpg" alt=""></a>
+
+        <a href="pics\galaxy-night-view.jpg"><img src="pics\galaxy-night-view.jpg" alt=""></a>
+
+        <a href="pics\glowing-satellite-orbits-planet-star-filled-galaxy-generated-by-ai.jpg"><img src="pics\glowing-satellite-orbits-planet-star-filled-galaxy-generated-by-ai.jpg" alt=""></a>
+
+        <a href="pics\glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg"><img src="pics\glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg" alt=""></a>
+
+        <a href="pics\night-sky-with-planets-galaxies-scene-generative-ai.jpg"><img src="pics\night-sky-with-planets-galaxies-scene-generative-ai.jpg" alt=""></a>
+
+        <a href="pics\one-person-hiking-mountain-peak-admiring-milky-way-galaxy-generated-by-ai.jpg"><img src="pics\one-person-hiking-mountain-peak-admiring-milky-way-galaxy-generated-by-ai.jpg" alt=""></a>
+
+        <a href="pics\pexels-alex-andrews-271121-1983032.jpg"><img src="pics\pexels-alex-andrews-271121-1983032.jpg" alt=""></a>
+
+        <a href="pics\pexels-igor-mashkov-14869791-6325003.jpg"><img src="pics\pexels-igor-mashkov-14869791-6325003.jpg" alt=""></a>
+
+        <a href="pics\pexels-pixabay-87009.jpg"><img src="pics\pexels-pixabay-87009.jpg" alt=""></a>
+
+        <a href="pics\photorealistic-galaxy-background.jpg"><img src="pics\photorealistic-galaxy-background.jpg" alt=""></a>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery'));
+    </script>
+</body>
+</html>
